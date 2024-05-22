@@ -1,1 +1,9 @@
-# Payment
+Define a class named Payment that contains an instance variable "paymentAmount" (non-static member variable) of type double that stores the amount of the payment and appropriate accessor (getPaymentAmount() ) and mutator methods. Also create a method named paymentDetails that outputs an English sentence to describe the amount of the payment. Override toString() method to call the paymentDetails() method to print the contents of payment amount and any other details not included in paymentDetails().
+
+Define a class named CashPayment that is derived from Payment. This class will have an additional instance variable of type String (a non-static member variable) that specifies a type of currency, such as "dollar", "euro", "peso", "yen", etc. This class should override the paymentDetails method to indicate that the payment is in cash, and the type of currency used. Include appropriate constructor(s)  and accessor/mutator methods for all instance variablesand.  Override toString() with contents of cash payment details (should still call paymentDetails()).
+
+Define a class named CreditCardPayment that is derived from Payment. This class should contain instance variables (member variables) for the name on the card, expiration date, and credit card number. Include appropriate constructor(s) and accessor/mutator methods for all instance variables. Finally, redefine thepaymentDetails method to include all credit card information in the printout.  Override toString() method with contents of credit payment details (should still call paymentDetails()).
+
+Create a main method within Payment that creates at least two CashPayment and two CreditCardPayment objects with different values and payment amounts. Call toString() methods from each object to print the details of each payment.
+
+For an additional challenge: Use an array of Payment type references to represent your objects. Use a "for" loop to show the contents of each Payment.
